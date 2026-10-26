@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patate Plage – Vacances de patates</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="jeu">
+    <header class="hud">
+      <div class="hud-bloc"><span class="hud-label">Score</span><span id="score" class="hud-valeur">0</span></div>
+      <div class="hud-bloc"><span class="hud-label">Temps</span><span id="temps" class="hud-valeur">60</span></div>
+      <div class="hud-bloc"><span class="hud-label">Combo</span><span id="combo" class="hud-valeur">x1</span></div>
+      <div class="hud-bloc hud-jauge">
+        <span class="hud-label">Chaleur</span>
+        <div class="barre"><div id="chaleur" class="barre-remplie chaud"></div></div>
+      </div>
+      <div class="hud-bloc hud-jauge">
+        <span class="hud-label">Dash</span>
+        <div class="barre"><div id="dash" class="barre-remplie dash"></div></div>
+      </div>
+    </header>
+
+    <div class="scene">
+      <canvas id="canvas" width="800" height="500"></canvas>
+
+      <div id="ecran" class="ecran">
+        <h1 id="ecran-titre">Patate Plage</h1>
+        <p id="ecran-texte">Ramasse un maximum de patates en 60 secondes, mais ne rôtis pas au soleil !</p>
+        <ul class="regles">
+          <li><b>Déplacement :</b> flèches ou ZQSD / WASD</li>
+          <li><b>Dash :</b> barre Espace (recharge 2 s)</li>
+          <li>Patate dorée = bonne. Patate pourrie (verte) = -10 points et -5 s</li>
+          <li>Ramasse vite pour monter le combo (jusqu'à x5)</li>
+          <li>Le soleil te chauffe : réfugie-toi sous un parasol pour refroidir</li>
+        </ul>
+        <button id="bouton" type="button">Jouer</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patate Paradise</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">POTATO GAMES CHALLENGE</p>
+        <h1>🥔 Patate <span>Paradise</span></h1>
+      </div>
+      <div class="vacation-stamp">☀️ VACANCES<br><strong>MODE ON</strong></div>
+    </header>
+
+    <section class="hud" aria-label="Statistiques de la partie">
+      <div class="stat"><span class="stat-label">SCORE</span><strong id="score">0</strong></div>
+      <div class="stat"><span class="stat-label">RÉCOLTE</span><strong><span id="harvest">0</span><small> / 20</small></strong></div>
+      <div class="stat"><span class="stat-label">VIES</span><strong id="lives">❤️❤️❤️</strong></div>
+      <div class="stat timer-stat"><span class="stat-label">TEMPS</span><strong id="timer">60</strong></div>
+    </section>
+
+    <section class="game-area">
+      <canvas id="game" width="900" height="520" aria-label="Terrain de jeu Patate Paradise"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="overlay-card">
+          <div class="big-potato">🥔</div>
+          <p class="eyebrow">UNE AVENTURE ENSOLEILLÉE</p>
+          <h2 id="overlay-title">Prêt pour la plage ?</h2>
+          <p id="overlay-text">Récolte 20 bonnes patates en 60 secondes. Attention aux patates pourries et à la marée !</p>
+          <button id="start-btn" class="primary-btn">Lancer la partie <span>→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-row">
+      <div class="controls">
+        <span class="control-icon">⌨️</span>
+        <div><strong>COMMANDES</strong><p><kbd>Z</kbd><kbd>Q</kbd><kbd>S</kbd><kbd>D</kbd> ou <kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> pour bouger</p></div>
+      </div>
+      <div class="legend">
+        <span>🥔 +10 points</span><span>🌟 +50 points</span><span>🤢 − points et vie</span><span>🌊 Marée dangereuse</span>
+      </div>
+    </section>
+
+    <footer>Reste cool, récolte des patates. <span>Made for the beach 🏝️</span></footer>
+  </main>
+</body>
+</html>
